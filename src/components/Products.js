@@ -1,6 +1,7 @@
+import axios from 'axios';
 import React, { Component } from 'react';
-import styles from './Products.module.css';
-import Cards from './Cards';
+import Card from './Card';
+import styles from './Products.module.css'
 
 class Products extends Component {
 
@@ -11,10 +12,22 @@ class Products extends Component {
         }
     }
 
+    componentDidMount() {
+        axios.get('https://fakestoreapi.com/products')
+            .then(response => this.setState({
+                products: response.data
+            }))
+    }
+
     render() {
+        const {products} = this.state
         return (
             <div className={styles.container}>
-                <Cards/>
+                {
+                    products.length ? 
+                    products.map(product => <Card key={product.id} image={product.image} name={product.title} cost={`${product.price} $`} /> ):
+                    <h1>Loding...</h1>
+                }
             </div>
         );
     }

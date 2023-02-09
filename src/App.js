@@ -14,13 +14,13 @@ class App extends Component {
     return (
       <div>
           <Navbar />
-          <Routes>
+          {/* <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/products" element={<Products />} />
           <Route path="/aboutus/*" element={<AboutUs />}/>
           <Route path="/notfound" element={<NotFound />} />
           <Route path="/*" element={<Navigate to="/notfound" />} />
-          </Routes>
+          </Routes> */}
           <Footer />
       </div>
     )
