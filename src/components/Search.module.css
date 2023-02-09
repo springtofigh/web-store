@@ -21,3 +21,17 @@
 .container input::placeholder {
     font-size: 1rem;
 }
+
+@media screen and (max-width: 990px) {
+    .container {
+        padding: 0 30px;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container div {
+        margin-left: 10px;
+    }
+}

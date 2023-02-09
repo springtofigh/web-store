@@ -24,3 +24,23 @@
 .container img {
     width: 300px;
 }
+
+@media screen and (max-width: 990px) {
+    .container {
+        padding: 0 30px;
+        flex-direction: column;
+    }
+
+    .container h3 {
+        font-weight: normal;
+    }
+
+    .container div {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container img {
+        width: 200px;
+    }
+}
