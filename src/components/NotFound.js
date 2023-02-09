@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styles from './Products.module.css';
+import styles from './NotFound.module.css';
 
 class NotFound extends Component {
     render() {
