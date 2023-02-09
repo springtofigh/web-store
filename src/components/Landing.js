@@ -9,8 +9,8 @@ class Landing extends Component {
     render() {
         return (
             <div>
-                {/* <Banner />
-                <Cards /> */}
+                <Banner />
+                <Cards />
                 <Search />
                 <Logos />
             </div>

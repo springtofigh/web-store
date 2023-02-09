@@ -37,14 +37,18 @@
 @media screen and (max-width: 480px) {
     .header {
         padding: 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .list {
+        padding: 0;
         flex-direction: column;
-        text-align: left;
+        text-align: center;
     }
 
     .logo {
-        width: 80px;
+        display: none;
     }
 }

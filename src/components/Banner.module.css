@@ -14,6 +14,7 @@
 }
 
 .textContainer h1 {
+    margin: 0;
     font-size: 4rem;
     color: #696969;
 }
@@ -27,4 +28,38 @@
 .textContainer span {
     color: #30c0e4;
     font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+    .textContainer {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .textContainer h1 {
+        font-size: 1.5rem;
+    }
+
+    .textContainer p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .textContainer {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .textContainer h1 {
+        font-size: 2.5rem;
+    }
+
+    .textContainer p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
 }
